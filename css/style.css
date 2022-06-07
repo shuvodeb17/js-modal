@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#wrapper {
+}
+.input-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.input-area #input {
+  width: 25%;
+  padding: 10px 8px;
+  border: none;
+  border-radius: 5px 0px 0px 5px;
+}
+.input-area #check-btn {
+  padding: 10px 8px;
+  border: none;
+  background: green;
+  color: #fff;
+  border-radius: 0px 5px 5px 0px;
+  width: 9%;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.input-area #check-btn:hover {
+  background: rgb(9, 71, 9);
+}
+.alert-area {
+  background: #9e9e9e;
+  position: absolute;
+  padding: 43px;
+  width: 31%;
+  text-align: center;
+  border-radius: 3px;
+}
+.alert-area #para {
+}
+.alert-area #ok-btn {
+  padding: 7px 38px;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(26, 77, 46);
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  color: #fff;
+}
+.alert-area #ok-btn:hover {
+  background-color: rgb(13, 196, 83);
+  color: #fff;
+}
+
+@media screen and (max-width: 576px) {
+  .input-area #input {
+    width: 58%;
+  }
+  .input-area #check-btn {
+    width: 19%;
+  }
+  .alert-area {
+    width: 94%;
+}
+}
+@media screen and (max-width: 300px) {
+  .input-area #input {
+    width: 68%;
+  }
+  .input-area #check-btn {
+    width: 33%;
+  }
+  .alert-area {
+    width: 94%;
+}
+}
+
+
